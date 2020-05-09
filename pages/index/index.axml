@@ -1,0 +1,10 @@
+<view>
+  <view class="header">选择车辆模式设置</view>
+  <view class="lines">
+    <view class="line" hover-class="red" style="color:{{item.lineFontColor}}" a:for="{{titles}}" key="{{item}}" data-index="{{index}}" onTap="lineOnTap">
+      {{item.title}}
+      <image a:if="{{index == selectedIndex}}" mode="aspectFit" src="../../assests/imgs/list_selected_icon.png"/>
+    </view>
+  </view>
+  <view class="footer">在用车申请时对选择车辆字段进行的模式选择</view>
+</view>
